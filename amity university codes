@@ -1,0 +1,170 @@
+Question 1: // WAP in C to add two numbers 
+
+#include <stdio.h>
+
+// Driver code
+
+int main()
+{
+    int a,b;
+    printf("Enter two numbers : ");
+    scanf("%d%d", &a, &b);
+    
+    printf("Sum of %d and %d is : %d ", a, b, a+b);
+    
+    return 0;
+}
+
+Question 2: // WAP in C to add three numbers 
+
+#include <stdio.h>
+
+// Driver code
+
+int main()
+{
+    int a,b,c;
+    printf("Enter three numbers : ");
+    scanf("%d%d%d", &a, &b, &c);
+    
+    printf("Sum of %d %d and %d is : %d ", a, b, c, a+b+c);
+    
+    return 0;
+}
+
+Question 3: // WAP in C to find area of circle 
+
+#include <stdio.h>
+
+// Defining the value of pi as 3.14
+
+#define pi 3.14
+
+// Driver code
+
+int main()
+{
+    int r;
+    printf("Enter radius of circle : ");
+    scanf("%d", &r);
+    
+    printf("Area of circle is : %f ", pi*r*r);
+    
+    return 0;
+}
+
+Question 4: // WAP in C to calculate simple interest 
+
+#include <stdio.h>
+
+// Driver code
+
+int main()
+{
+    int T;
+    float P, R, SI;
+    
+    printf("Enter Principal amount : ");
+    scanf("%f", &P);
+    
+    printf("Enter Rate of interest : ");
+    scanf("%f", &R);
+    
+    printf("Enter Time in years : ");
+    scanf("%d", &T);
+    
+    printf("Simple Interest is : %f ", P*R*T/100);
+    
+    return 0;
+}
+
+Question 5: // WAP in C to print a block F using hash(#), where the F has a height 
+            // of six characters and a width of five and four characters
+
+#include <stdio.h>
+
+// Driver code
+
+int main()
+{
+    printf("#####\n");
+	printf("#\n");
+	printf("####\n");
+	printf("#\n");
+	printf("#\n");
+	printf("#\n");
+	
+	return 0;
+}
+
+Question 6: // WAP in C that accepts two items' weight (floating point values) and number of 
+            // purchase (floating point values) and calculate the average value of the items
+
+#include <stdio.h>
+
+// Driver code
+
+int main()
+{
+    float w1, w2, n1, n2, average;
+    printf("Enter weight of first item : ");
+    scanf("%f", &w1);
+    
+    printf("Enter weight of second item : ");
+    scanf("%f", &w2);
+    
+    printf("Enter number of purchases for first item : ");
+    scanf("%f", &n1);
+    
+    printf("Enter number of purchases for second item : ");
+    scanf("%f", &n2);
+    
+    average = ( (w1*n1) + (w2*n2) ) / (n1+n2);
+    
+    printf("The average value of the items is : %f", average);
+	
+	return 0;
+}
+
+Question 7: // WAP in C to swap two numbers using a third variable
+
+#include <stdio.h>
+
+// Driver code
+
+int main()
+{
+    int a, b, temp;
+    printf("Enter two numbers : ");
+    scanf("%d%d", &a, &b);
+   
+    temp=a;
+    a=b;
+    b=temp;
+    
+    printf("The numbers after swapping are : %d and %d", a, b);
+	
+	return 0;
+}
+
+Question 8: // WAP in C to swap two numbers without using a third variable
+
+#include <stdio.h>
+
+// Driver code
+
+int main()
+{
+    int a, b;
+    printf("Enter two numbers : ");
+    scanf("%d%d", &a, &b);
+   
+    a = a+b;
+    b = a-b;
+    a = a-b;
+    
+    printf("The numbers after swapping are : %d and %d", a, b);
+	
+	return 0;
+}
+
