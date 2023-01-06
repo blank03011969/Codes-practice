@@ -379,4 +379,94 @@ int main()
     return 0;
 }
 
-11:  
+11:  //WAP in C to find length of string using pointers
+#include <stdio.h>
+ 
+int main()
+{
+    
+    
+    char s[100];
+    char *ptr;
+    ptr=s;
+    printf("enter a string : ");
+    gets(s);
+    int count=0;
+    
+    while(*ptr!='\0')
+    {
+        count++;
+        ptr++;
+    }
+    printf("Length of string is : %d",count);
+    return 0;
+}
+
+12:  //WAP in C to find length of string using pointers
+#include <stdio.h>
+ 
+int main()
+{
+    
+    
+    char s[100],c[100];
+    char *ptr1=s,*ptr2=c;
+    
+    printf("enter a string : ");
+    gets(s);
+    int count=0;
+    
+    while(*ptr1!='\0')
+    {
+        count++;
+        ptr1++;
+    }
+    ptr1=s;
+    for(int i=0;i<count;i++)
+    {
+        *ptr2=*ptr1;
+        ptr1++;
+        ptr2++;
+    }
+    
+    puts(c);
+    
+    return 0;
+}
+
+13: //WAP in C to concatenate 2 string using pointers
+#include <stdio.h>
+ 
+int main()
+{
+    
+    
+    char s[100],c[100];
+    char *ptr1=s,*ptr2=c;
+    
+    printf("enter a string : ");
+    gets(s);
+    
+    printf("enter another string : ");
+    gets(c);
+    
+    while(*ptr1!='\0')
+    {
+        ptr1++;
+        
+        
+    }
+
+    while(*ptr2!='\0')
+    {
+        *ptr1=*ptr2;
+        ptr1++;
+        ptr2++;
+    }
+    
+    puts(s);
+    
+    return 0;
+}
+
+14:  
